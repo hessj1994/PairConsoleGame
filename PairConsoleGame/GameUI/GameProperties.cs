@@ -10,13 +10,13 @@ namespace GameUI
     {
         public int CharacterID { get; set; }
         public string CharacterName { get; set; }//skills, race abilities
-        public int Level { get; set; }
+        //public int Level { get; set; }
         public int Lives { get; set; }
-        public float Experience { get; set; }
-        public string Enemies { get; set; }
+        //public float Experience { get; set; }
+        //public string Enemies { get; set; }
         public CharacterProperties() { }
 
-        public CharacterProperties(int characterID, string characterName, int level, int lives, float experience, string enemies)
+        public CharacterProperties(int characterID, string characterName, int lives)
         {
             CharacterID = characterID;
             CharacterName = characterName;
@@ -30,10 +30,10 @@ namespace GameUI
 
     ////BRAIN-STORMMMMMMM
     ///All human properties
-    //
+    //Power Level, Weapon Type, Armor Type.
     //
     //All enemy/level properties
-    //
+    //Power Level, weapon type, exp given, death quote.
     //
     //All map properties / move properties (second class)
     //
@@ -45,25 +45,25 @@ namespace GameUI
 
 
 
-    public class EnemyProperties
-    {
-        public int CharacterID { get; set; }
-        public string CharacterName { get; set; }//skills, race abilities
-        public int Level { get; set; }
-        public int Lives { get; set; }
-        public float Experience { get; set; }
-        public string Enemies { get; set; }
-        public EnemyProperties() { }
+    //public class EnemyProperties
+    //{
+    //    public int CharacterID { get; set; }
+    //    public string CharacterName { get; set; }//skills, race abilities
+    //    public int Level { get; set; }
+    //    public int Lives { get; set; }
+    //    public float Experience { get; set; }
+    //    public string Enemies { get; set; }
+    //    public EnemyProperties() { }
 
-        public EnemyProperties(int characterID, string characterName, int level, int lives, float experience, string enemies)
-        {
-            CharacterID = characterID;
-            CharacterName = characterName;
-            Level = level;
-            Lives = lives;
-            Experience = experience;
-            Enemies = enemies;
-        }
-    }
+    //    public EnemyProperties(int characterID, string characterName, int level, int lives, float experience, string enemies)
+    //    {
+    //        CharacterID = characterID;
+    //        CharacterName = characterName;
+    //        Level = level;
+    //        Lives = lives;
+    //        Experience = experience;
+    //        Enemies = enemies;
+    //    }
+    //}
     //separate classes for character selection, enemies, levels
 }

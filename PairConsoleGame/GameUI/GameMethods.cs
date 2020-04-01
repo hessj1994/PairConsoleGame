@@ -13,7 +13,7 @@ namespace GameUI
 
         public void Run()
         {
-            _gameRepo.CreateCharacterProperties();
+            //_gameRepo.CreateCharacterProperties();
             //added in extra enemy, character, level classes if enough time
             StartGame();
         }
@@ -24,7 +24,7 @@ namespace GameUI
             int y = 0;
             int z = 0;
 
-            List<> variable = new List<>();
+            //List<> variable = new List<>();
         }
     }
 }

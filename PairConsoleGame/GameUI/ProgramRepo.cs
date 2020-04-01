@@ -9,20 +9,20 @@ namespace GameUI
     class ProgramRepo
     {
         List<CharacterProperties> _characterProperties = new List<CharacterProperties>();
-        List<EnemyProperties> _enemyProperties = new List<EnemyProperties>();
+        //List<EnemyProperties> _enemyProperties = new List<EnemyProperties>();
         //List<CharacterProperties> _characterProperties
 
         public void CreateCharacterProperties()
         {//change levels/experience to innate character props
-            _characterProperties.Add(new CharacterProperties(1, "Human", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(2, "Khajat", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(3, "Argunian", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(4, "Elf", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(5, "Not-Day Elf", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(6, "Witch", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(7, "Blue Guard", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(8, "Nerds", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
-            _characterProperties.Add(new CharacterProperties(9, "Unforgiven", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(1, "Human", 5));
+            _characterProperties.Add(new CharacterProperties(2, "Khajat", 1));
+            _characterProperties.Add(new CharacterProperties(3, "Argunian", 1));
+            _characterProperties.Add(new CharacterProperties(4, "Elf", 1));
+            _characterProperties.Add(new CharacterProperties(5, "Not-Day Elf", 1));
+            _characterProperties.Add(new CharacterProperties(6, "Witch", 1));
+            _characterProperties.Add(new CharacterProperties(7, "Blue Guard", 1));
+            _characterProperties.Add(new CharacterProperties(8, "Nerds", 1));
+            _characterProperties.Add(new CharacterProperties(9, "Unforgiven", 1));
         }//^^ Change GameProperties to CharacterProperties
         // CreateEnemyProperties
         // CreateLevelSystemProperties

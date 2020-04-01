@@ -10,60 +10,63 @@ namespace GameUI
     {
         public int CharacterID { get; set; }
         public string CharacterName { get; set; }//skills, race abilities
-        //public int Level { get; set; }
         public int Lives { get; set; }
         //public float Experience { get; set; }
-        //public string Enemies { get; set; }
         public CharacterProperties() { }
 
         public CharacterProperties(int characterID, string characterName, int lives)
         {
             CharacterID = characterID;
             CharacterName = characterName;
-            //Level = level; => to leveling class, including exp from monsters, make inside of enemy class
-            Lives = lives; //each race has different starting lives
+            Lives = lives; //each race has different starting lives, power?
             //Experience = experience; => ExpGain
-            //Exp => own class? or contain inside this one
-            //Enemies = enemies;
+        }
+    }//class for character levels
+
+    public class EnemyProperties
+    {
+        public int EnemyID { get; set; }
+        public string EnemyName { get; set; }
+        public int EnemyPowerLevel { get; set; }
+        public string EnemyWeapon { get; set; } //weapon ID, nest inside of prop
+        public int EnemyXP { get; set; }
+        public string DeathNote { get; set; }// also ID?
+        public EnemyProperties() { }
+
+        public EnemyProperties(int enemyID, string enemyName, int enemyPowerLevel, string enemyWeapon, int enemyXP,
+            string deathNote)
+        {
+            EnemyID = enemyID;
+            EnemyName = enemyName;
+            EnemyPowerLevel = enemyPowerLevel;
+            EnemyWeapon = enemyWeapon;
+            EnemyXP = enemyXP;
+            DeathNote = deathNote;
         }
     }
-
+    public class MapProperties
+    {
+        public char NorthDirection { get; set; }
+        public char EastDirection { get; set; }
+        public char WestDirection { get; set; }
+        public char SouthDirection { get; set; }
+        public char UpDirection { get; set; }
+        public char DownDirection { get; set; }
+        public MapProperties() { }
+    }
     ////BRAIN-STORMMMMMMM
-    ///All human properties
-    //Power Level, Weapon Type, Armor Type.
-    //
-    //All enemy/level properties
-    //Power Level, weapon type, exp given, death quote.
-    //
+
     //All map properties / move properties (second class)
-    //
+    //starting location, does it change with each race? no | what options should the user have to move around? (N,E,W,S,U,D)
+    //what, if anything, happens during travel, does traveling reduce any character attributes (water/food/lives?) I don't think this is necessary
+    //is this the win condition? should it be?
     //
     //All world events properties, chances of running into them, what/where they are etc
-    //
-    //
+    // Negative events: Dragon, bandits, breaking your ankle,
+    // Positive events: Lives gained, food/water found,
+    //option to open static world map ASCII, or repeat, plus returning where they are
 
+    //Win condition: Boss(escape or fight? experience = points) +
 
-
-
-    //public class EnemyProperties
-    //{
-    //    public int CharacterID { get; set; }
-    //    public string CharacterName { get; set; }//skills, race abilities
-    //    public int Level { get; set; }
-    //    public int Lives { get; set; }
-    //    public float Experience { get; set; }
-    //    public string Enemies { get; set; }
-    //    public EnemyProperties() { }
-
-    //    public EnemyProperties(int characterID, string characterName, int level, int lives, float experience, string enemies)
-    //    {
-    //        CharacterID = characterID;
-    //        CharacterName = characterName;
-    //        Level = level;
-    //        Lives = lives;
-    //        Experience = experience;
-    //        Enemies = enemies;
-    //    }
-    //}
-    //separate classes for character selection, enemies, levels
+    //losing lives: lose a fight with enemy, negative world events giving a chance to lose life,
 }

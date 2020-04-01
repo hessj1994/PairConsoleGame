@@ -10,7 +10,7 @@ namespace GameUI
     {
         static void Main(string[] args)
         {
-            ProgramUI _ui = new ProgramUI();
+            GameMethods _ui = new GameMethods();
             _ui.Run();
         }
     }

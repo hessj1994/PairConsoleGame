@@ -3,28 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Game;
 
 namespace GameUI
-{//program methods
-    public class ProgramRepo
+{//
+    class ProgramRepo
     {
-        private readonly ProgramUI _gameRepo = new ProgramUI();
+        List<CharacterProperties> _characterProperties = new List<CharacterProperties>();
+        List<EnemyProperties> _enemyProperties = new List<EnemyProperties>();
+        //List<CharacterProperties> _characterProperties
 
-        public void Run()
-        {
-            _gameRepo.GameProperties();
-            //added in extra enemy, character, level classes if enough time
-            StartGame();
-        }
-
-        private void StartGame()
-        {
-            int x = 0;//lives, time, points, etc
-            int y = 0;
-            int z = 0;
-
-            List<Stages> stages = new List<Stages>();
-        }
+        public void CreateCharacterProperties()
+        {//change levels/experience to innate character props
+            _characterProperties.Add(new CharacterProperties(1, "Human", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(2, "Khajat", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(3, "Argunian", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(4, "Elf", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(5, "Not-Day Elf", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(6, "Witch", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(7, "Blue Guard", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(8, "Nerds", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+            _characterProperties.Add(new CharacterProperties(9, "Unforgiven", 1, 5, 1.25f, "Would not put here, additional class needed, as they will have their own attributes."));
+        }//^^ Change GameProperties to CharacterProperties
+        // CreateEnemyProperties
+        // CreateLevelSystemProperties
+        // CreateWorldProperties, paths to locations etc
+        // CreateWorldDangers, ex. Dragons, Bandits, Giants
     }
 }

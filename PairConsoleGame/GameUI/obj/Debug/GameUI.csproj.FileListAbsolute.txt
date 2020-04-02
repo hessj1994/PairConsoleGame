@@ -5,3 +5,9 @@ C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\bi
 C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\bin\Debug\GameUI.pdb
 C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\GameUI.exe
 C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\GameUI.pdb
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.WMPDXMLib.dll
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.WMPLauncher.dll
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.WMPLib.dll
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.WMPRichPreviewLauncher.dll
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\GameUI.csproj.ResolveComReference.cache

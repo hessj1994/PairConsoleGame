@@ -22,6 +22,7 @@ namespace GameUI
             _characterProperties.Add(new CharacterProperties(7, "Blue Guard", 1));
             _characterProperties.Add(new CharacterProperties(8, "Nerds", 1));
             _characterProperties.Add(new CharacterProperties(9, "Unforgiven", 1));
+            _characterProperties.Add(new CharacterProperties(10, "Exit Program", 0));
         }
 
         public List<CharacterProperties> ShowCharacterProperties()

@@ -24,6 +24,12 @@ namespace GameUI
             _characterProperties.Add(new CharacterProperties(9, "Unforgiven", 1));
         }
 
+        public List<CharacterProperties> ShowCharacterProperties()
+        {
+            return _characterProperties;
+        }
+
+        // CreateEnemyProperties
         public void CreateEnemyProperties()
         {
             _enemyProperties.Add(new EnemyProperties(1, "EnemyName", 5, "Weapon", 1, "DeathNote"));
@@ -32,9 +38,16 @@ namespace GameUI
             _enemyProperties.Add(new EnemyProperties(4, "EnemyName", 5, "Weapon", 1, "DeathNote"));
             _enemyProperties.Add(new EnemyProperties(5, "EnemyName", 5, "Weapon", 1, "DeathNote"));
         }
-        // CreateEnemyProperties
+
+        public List<EnemyProperties> ShowEnemyProperties()
+        {
+            return _enemyProperties;
+        }
+
         // CreateLevelSystemProperties
         // CreateWorldProperties, paths to locations etc
+        // ^^^ MAKE THESE TWO INTO LISTS INSIDE OF LOOP ^^^
+
         // CreateWorldDangers, ex. Dragons, Bandits, Giants
     }
 }

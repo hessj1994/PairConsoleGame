@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WMPLib;
+using System.Media;
 
 namespace GameUI
 {
@@ -11,6 +12,10 @@ namespace GameUI
     {
         static void Main(string[] args)
         {
+            WindowsMediaPlayer myPlayer = new WindowsMediaPlayer();
+            myPlayer.URL = "music.mp3";
+            myPlayer.controls.play();
+
             GameMethods _ui = new GameMethods();
             _ui.Run();
         }

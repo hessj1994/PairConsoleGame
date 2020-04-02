@@ -11,3 +11,4 @@ C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\ob
 C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.WMPLib.dll
 C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\Interop.WMPRichPreviewLauncher.dll
 C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\obj\Debug\GameUI.csproj.ResolveComReference.cache
+C:\Users\hessj\Desktop\1150\CSharpGold\PairConsoleGame\PairConsoleGame\GameUI\bin\Debug\music.mp3

@@ -50,30 +50,40 @@ namespace GameUI
                     Console.WriteLine($"TITLE PLACEHOLDER - The Eldest Bewks, Ladryn. But show the user starting stats etc.\n" +
                                       $"Starting location\n" +
                                       $"The beginning of the game starts in {spawnPoint}...");
-                    characterSelection = Console.ReadLine();
+                    selectionForCharacterType = Console.ReadLine();
+                    userSelectsCharacter = Convert.ToInt32(selectionForCharacterType);
                     //NULL EXCEPTION HANDLER, STRING EXCEPTION HANDLER
                     //if (....
 
                     foreach (CharacterProperties raceCharacterProperties in charProps)
                     {
-                        if (selectionForCharacterType == raceCharacterProperties.CharacterID)
+                        if (userSelectsCharacter == raceCharacterProperties.CharacterID)
                         {
                             leaveLoop = true;
-                            showCharInfo = charProps;
+                            showCharInfo = raceCharacterProperties;
                             break;
                         }
                     }
                     //NULL EXCEPTION HANDLER, STRING EXCEPTION HANDLER
                     //if (....
                     //Maybe an exception of invalid character choice. ex 11
+
+                    //***reselect character?***
                 } //leaving while loop
 
-                //we've shown the user the title screen, allowed them to select a character ID, and shown them properties of the selected character
-                // WHAT DO WE DO NEXT??? ARE THERE ANY OTHER OPTIONS WE SHOULD INCLUDE
-                //
-                //Brainstorm time yooooo of what decisions to give the user next
-                //
+                //user exit condition, if loop
+
+                Console.WriteLine($"You are a {showCharInfo.CharacterName}.\n" +
+                                  $"You have {showCharInfo.Lives}.");
+
+
             }
+
+
+
+
+
+
 
             //Console.ReadLine();
         }

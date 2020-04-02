@@ -74,7 +74,7 @@ namespace GameUI
                 //user exit condition, if loop
 
                 Console.WriteLine($"You are a {showCharInfo.CharacterName}.\n" +
-                                  $"You have {showCharInfo.Lives}.");
+                                  $"You have {showCharInfo.Lives} lives.");
 
 
             }
